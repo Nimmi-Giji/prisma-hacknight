@@ -14,10 +14,8 @@ const Leaderboard: React.FC = () => {
 
     socket.on('leaderboardUpdate', (data) => {
       console.log('Received leaderboard update:', data);
-      setLeaderboard((prevLeaderboard) => {
-        // Implement your logic to update the leaderboard
-        return prevLeaderboard; // Replace with updated leaderboard data
-      });
+      // Update leaderboard with received data
+      setLeaderboard(data);
     });
 
     socket.on('connect_error', (err) => {
