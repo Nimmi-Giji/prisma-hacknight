@@ -14,7 +14,6 @@ const Leaderboard: React.FC = () => {
 
     socket.on('leaderboardUpdate', (data) => {
       console.log('Received leaderboard update:', data);
-      // Update leaderboard with received data
       setLeaderboard(data);
     });
 
