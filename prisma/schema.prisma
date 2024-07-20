@@ -13,4 +13,3 @@ model Leaderboard {
   score     Int
   createdAt DateTime @default(now())
 }
-
